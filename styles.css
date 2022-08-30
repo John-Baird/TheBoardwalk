@@ -4,9 +4,12 @@ html{
 }
 body {
     
-    background-image: linear-gradient(rgb(8, 0, 97) 20%, rgb(93, 77, 157) 80%);
+    background-image: linear-gradient(rgb(8, 0, 97), rgb(93, 77, 157),rgb(8, 0, 97) );
   }
-
+body.lol{
+    background-image: linear-gradient(rgb(255, 0, 0) 10%, rgb(93, 77, 157) 30%,rgb(8, 0, 97) 60%);
+    margin: none;
+}
 /* 
 .main { 
     transition: .3s;
@@ -22,16 +25,60 @@ body {
     font-size: 55px;
 }
 */ 
+
 @keyframes color {
-    0%,100% {color: white;}
-    50% {color: black}
+    0%,100% {color: black; letter-spacing: 0px; opacity: 0;}
+    50% {color: white; letter-spacing: 5px; opacity: 1;}
 }
+@keyframes colorr {
+    0%,100% {color: black; letter-spacing: 0px; opacity: 0;}
+    50% {color: rgb(255, 0, 0); letter-spacing: 5px; opacity: 1;}
+}
+
 
 
 .main {
     color:white;
     animation: color 2s infinite;
+    display:flex;
+    justify-content: center;
+    opacity: 0;
+    text-decoration: none;
+}
+.main:hover {
+    color:red!important;
     
+    animation: color 2s infinite;
+    display:flex;
+    justify-content: center;
+    opacity: 1!important;
+    font-size: 120%;
 
 }
+.blockk{
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.block {
+    transition: 4s;
+    background-color: white;
+    display: flex;
+    height: 1em;
+    width: 1em;
+    opacity: 1;
+    
+
+
+}
+.block:hover {
+    transition: 0s;
+    background-color: black;
+    display: flex;
+    height: 1em;
+    width: 1em;
+    opacity: 0;
+    
+
+
+}
