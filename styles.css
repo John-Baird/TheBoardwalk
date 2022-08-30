@@ -1,0 +1,37 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    
+    background-image: linear-gradient(rgb(8, 0, 97) 20%, rgb(93, 77, 157) 80%);
+  }
+
+/* 
+.main { 
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    
+    color: white;
+    font-size: 40px;
+}
+
+.main:hover {
+    transition: 1s;
+    font-size: 55px;
+}
+*/ 
+@keyframes color {
+    0%,100% {color: white;}
+    50% {color: black}
+}
+
+
+.main {
+    color:white;
+    animation: color 2s infinite;
+    
+
+}
+
